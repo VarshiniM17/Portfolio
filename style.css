@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+body {
+    line-height: 1.6;
+    background-color: #e6ccff; /* Light purple background */
+    color: #0d47a1; /* Dark blue paragraphs */
+}
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #4a148c;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+.section {
+    padding: 80px 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-content {
+    max-width: 900px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.85); /* Slight white background */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Different colors for sections */
+.home {
+    background-color: #cfa2ff; /* slightly darker light purple */
+}
+
+.about {
+    background-color: #e6ccff; /* light purple */
+}
+
+.skills {
+    background-color: #d9b3ff; /* another shade of light purple */
+}
+
+.education {
+    background-color: #f3d9ff; /* education section shade */
+}
+
+.internship {
+    background-color: #f0d9ff; /* internship shade */
+}
+
+.contact {
+    background-color: #e6ccff;
+}
+
+/* Headings */
+.section h1 {
+    font-size: 42px;
+    color: #4a148c;
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    color: #4a148c;
+    margin-bottom: 20px;
+}
+
+/* Paragraphs */
+.section p {
+    color: #0d47a1;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Skill Boxes */
+.skill-box {
+    display: inline-block;
+    background-color: #ffb6c1; /* Pink color */
+    padding: 15px 25px;
+    margin: 10px;
+    border-radius: 10px;
+    color: #1a237e;
+    font-weight: bold;
+    min-width: 120px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Links */
+a {
+    color: #8e24aa;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #4a148c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .section {
+        padding: 50px 15px;
+    }
+
+    .section h1 {
+        font-size: 32px;
+    }
+
+    .section h2 {
+        font-size: 24px;
+    }
+
+    .skill-box {
+        min-width: 100px;
+        padding: 12px 18px;
+        margin: 8px;
+    }
+
+    .navbar ul li {
+        margin: 0 10px;
+    }
+}
